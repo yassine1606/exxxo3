@@ -4,7 +4,6 @@ div {
   animation-direction: alternate-reverse;
   animation: yo 2s;
   animation-iteration-count:2;
-  animation: bonus 2s;
 }
 div:hover{
   animation-play-state: paused;
@@ -20,7 +19,7 @@ div:hover{
   position: relative;
   letter-spacing: 5px;
   animation: bonus 2s infinite alternate;
-  }
+}
 
 @keyframes bonus{
   0%{top: 0px;font-size: 36px}
