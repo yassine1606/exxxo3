@@ -4,7 +4,7 @@ div {
   animation-direction: alternate-reverse;
   animation: yo 2s;
   animation-iteration-count:2;
-
+  animation: bonus 2s;
 }
 div:hover{
   animation-play-state: paused;
@@ -15,4 +15,14 @@ div:hover{
 }
 @keyframes yo{
   0%{left:0px; top: 0px;} 25%{left:200px;top: 0px;} 50%{top:200px;left: 200px;} 75%{top:200px; left: 0px;} 100%{left:0px;top: 0px;}
+}
+#bounce-title{
+  position: relative;
+  letter-spacing: 5px;
+  animation: bonus 2s infinite alternate;
+  }
+
+@keyframes bonus{
+  0%{top: 0px;font-size: 36px}
+  100%{top: 100px; font-size:0px}
 }
