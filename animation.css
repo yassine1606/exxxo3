@@ -1,0 +1,18 @@
+div {
+  animation: mymove 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  animation: yo 2s;
+  animation-iteration-count:2;
+
+}
+div:hover{
+  animation-play-state: paused;
+}
+@keyframes mymove {
+    from {left: 0px;} /* 0% */
+    to {left: 200px ;} /* 100% */
+}
+@keyframes yo{
+  0%{left:0px; top: 0px;} 25%{left:200px;top: 0px;} 50%{top:200px;left: 200px;} 75%{top:200px; left: 0px;} 100%{left:0px;top: 0px;}
+}
